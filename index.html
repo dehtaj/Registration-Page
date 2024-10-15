@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Registration Page</title>
+    <link rel="stylesheet" href="mystyles1.css">
+   
+</head>
+<body>
+    
+<div class="registration-container">
+    <div class="registration-box">
+        <h2>Register</h2>
+        <form name="myform" action="Login-Page.html"  onsubmit="return loginValidation()">
+            <input type="text" name="fullname" placeholder="Full Name" autofocus>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" pattern="[0-9]{10}"  placeholder="Phone Number" required>
+            <input type="date" name="dob" placeholder="Date of Birth" required>
+            <input type="number" name="age" placeholder="Age" required>
+            <input type="text" name="address" placeholder="Address" required>
+            <input type="text" name="city" placeholder="City" required>
+            <input type="text" name="state" placeholder="State" required>
+            <input type="text" name="pincode" placeholder="Pin Code" required>
+            <input type="password" name="password" placeholder="Password" >
+            <input type="password" name="cpassword" placeholder="Confirm Password" >
+            <button type="submit" class="register-btn">Register</button>
+        </form>
+    </div>
+</div>
+<script src="Validate.js">
+    </script>
+
+</body>
+</html>

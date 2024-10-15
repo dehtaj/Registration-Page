@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: grey;
+    background-image: url(RegBg.jpg);
+}
+
+.login-container {
+    width: 100%;
+    max-width: 350px;
+    padding: 15px;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #0fcc1f;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #caedcd;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/*
+Media Queries:
+For screens smaller than 600px (e.g., tablets), the padding inside 
+the login box is reduced, and the font size of the input fields 
+and button is slightly smaller.
+For screens smaller than 400px (e.g., mobile phones), the padding 
+and font size are further reduced to ensure the design remains clean 
+and functional on smaller devices.
+*
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .login-box {
+        padding: 15px;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .login-box {
+        padding: 10px;
+    }
+
+    input, button {
+        font-size: 12px;
+    }
+}
